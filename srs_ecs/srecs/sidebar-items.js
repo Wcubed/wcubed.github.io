@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["world",""]],"struct":[["Entity","Entity identifier used to acces an Entity in the world."],["EntityIterator","Iterates over all valid entities in the world it was generated from. Only allows immutable acces to the world because the world has been borrowed."]]});

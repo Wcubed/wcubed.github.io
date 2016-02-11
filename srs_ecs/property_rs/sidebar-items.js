@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Entity","Entity identifier used to acces an Entity in the world."],["World",""]]});

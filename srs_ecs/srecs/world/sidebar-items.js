@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["World","Keeps track of entities and their components."]]});
