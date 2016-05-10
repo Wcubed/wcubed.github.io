@@ -1,0 +1,136 @@
+
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+svg {
+    background-color: white;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.container {
+    padding: 0.5rem;
+}
+
+/* --- Buttons ---- */
+button {
+    background-color: rgb(11, 59, 228);
+    color: white;
+    border: none;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+button:active {
+    background-color: rgb(42, 85, 236);
+}
+
+.text-year {
+    display: inline;
+}
+
+/* --- /Buttons ---- */
+
+/* ---- Axis ---- */
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.axis.x text {
+    text-anchor: middle;
+}
+
+.axis text.label {
+    text-anchor: start;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+/* ---- /Axis ---- */
+
+/* ---- Datapoints ---- */
+
+rect.hovercatcher {
+    fill: transparent;
+}
+
+/* -- Tooltips -- */
+
+.tooltip {
+    display: none;
+}
+
+.tooltip rect {
+    fill: white;
+}
+
+.tooltip tspan.total {
+    fill: rgb(11, 59, 228);
+}
+
+.tooltip tspan.urban {
+    fill: rgb(0, 122, 0);
+}
+
+.tooltip tspan.rural {
+    fill: rgb(122, 0, 0);
+}
+
+/* -- /Tooltips -- */
+
+circle.total {
+    fill: rgb(11, 59, 228);
+    r: 2;
+}
+
+line {
+    stroke: rgb(136, 136, 136);
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+line.rural {
+    stroke: rgb(122, 0, 0);
+}
+
+line.urban {
+    stroke: rgb(0, 122, 0);
+}
+
+.datapoint:hover circle {
+    fill: rgb(36, 179, 0);
+}
+
+.datapoint:hover line {
+    stroke: rgb(54, 255, 4);
+}
+
+/* ---- Datapoints ---- */
+
+/* ---- Background lines ---- */
+
+.lineGroup line {
+    stroke: rgb(236, 236, 236);
+}
+
+.lineGroup.hidden line {
+    display: none;
+}
+
+.lineGroup.highlight line {
+    stroke: rgb(143, 143, 143);
+    display: block;
+}
+
+/* ---- /Background lines ---- */
