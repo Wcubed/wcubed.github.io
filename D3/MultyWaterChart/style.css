@@ -1,0 +1,273 @@
+
+body {
+    color: rgb(57, 57, 57);
+    font-family: sans-serif;
+}
+
+svg {
+    background-color: white;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.container {
+    padding: 0.5rem;
+    display: block;
+
+    width: 70%;
+    min-width: 900px;
+    height: 100%;
+
+    margin: auto;
+}
+
+.filters div {
+    margin-bottom: 1.5rem;
+}
+
+.pull-left {
+    float: left;
+}
+
+.description {
+    margin-right: 2rem;
+    width: 30%;
+}
+
+.filters {
+    width: 60%;
+}
+
+/* --- Buttons ---- */
+
+button {
+    background-color: white;
+    color: rgb(20, 55, 179);
+
+    border-width: 1px;
+    border-right-width: 0;
+    border-color: rgb(20, 55, 179);
+
+    padding: 0.5rem 1rem;
+}
+
+button:first-child {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+button:last-child {
+    border-right-width: 1px;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+button:hover {
+    background-color: rgb(44, 77, 194);
+    color: white;
+
+    cursor: hand;
+    cursor: pointer;
+}
+
+button:active,
+button.active {
+    background-color: rgb(20, 55, 179);
+    color: white;
+}
+
+.text-year {
+    display: inline;
+    margin-left: 0.2rem;
+}
+
+/* --- /Buttons ---- */
+
+/* ---- Checkboxes ---- */
+
+.filters .continent-checkbox {
+    display: block;
+    float: left;
+
+    padding: 0.5rem 0.6rem;
+    margin-bottom: 0.5rem;
+
+    border-width: 1px;
+    border-style: solid;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+.continent-checkbox:first-child {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.continent-checkbox:last-child {
+    border-right-width: 1px;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.continent-checkbox.inactive {
+    background-color: white !important;
+}
+
+.continent-checkbox.active {
+    color: white !important;
+}
+
+.continent-checkbox:hover {
+    cursor: hand;
+    cursor: pointer;
+}
+
+/* ---- /Checkboxes ---- */
+
+.scatterPlot {
+    float: left;
+    clear: left;
+}
+
+.yearChart {
+    float: left;
+}
+
+/* ---- Axis ---- */
+
+.axis text {
+    font: 10px sans-serif;
+    fill: rgb(57, 57, 57);
+}
+
+.axis text.label {
+    text-anchor: start;
+    font-size: 1rem;
+    fill: rgb(57, 57, 57);
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: rgb(57, 57, 57);
+    shape-rendering: crispEdges;
+}
+
+/* ---- /Axis ---- */
+
+
+/* ---- Datapoints ---- */
+
+rect.hovercatcher {
+    fill: transparent;
+}
+
+/* -- Tooltips -- */
+
+.tooltip {
+    display: none;
+}
+
+.tooltip rect {
+    fill: white;
+}
+
+.tooltip tspan.name {
+    font-weight: bold;
+}
+
+/*.tooltip tspan.total {
+    fill: rgb(11, 59, 228);
+}
+
+.tooltip tspan.urban {
+    fill: rgb(0, 122, 0);
+}
+
+.tooltip tspan.rural {
+    fill: rgb(122, 0, 0);
+}*/
+
+/* -- /Tooltips -- */
+
+circle.total {
+    fill: transparent;
+    r: 2.5;
+}
+
+line {
+    stroke: rgb(136, 136, 136);
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+/*line.rural {
+    stroke: rgb(122, 0, 0);
+}
+
+line.urban {
+    stroke: rgb(0, 122, 0);
+}
+
+.datapoint:hover circle {
+    fill: rgb(36, 179, 0);
+}
+
+.datapoint:hover line {
+    stroke: rgb(54, 255, 4);
+}*/
+
+/* ---- Datapoints ---- */
+
+/* ---- Background lines ---- */
+
+.lineGroup line {
+    stroke: rgb(236, 236, 236);
+}
+
+.lineGroup.hidden line {
+    display: none;
+}
+
+.lineGroup.highlight line {
+    stroke: rgb(143, 143, 143);
+    display: block;
+}
+
+/* ---- /Background lines ---- */
+
+/* ---- Difference barchart ---- */
+
+rect.bar {
+    shape-rendering: crispEdges;
+}
+
+/* ---- /Difference barchart ---- */
+
+/* ---- Continent linechart --- */
+
+.continent-line {
+    shape-rendering: geometricPrecision;
+}
+
+.yearline {
+    fill: rgb(143, 143, 143);
+}
+
+/* ---- /Continent linechart --- */
