@@ -262,12 +262,16 @@ rect.bar {
 
 /* ---- Continent linechart --- */
 
+.gridlines line {
+    stroke: rgb(200, 200, 200);
+}
+
 .continent-line {
     shape-rendering: geometricPrecision;
 }
 
 .yearline {
-    fill: rgb(143, 143, 143);
+    stroke: rgb(20, 55, 179);
 }
 
 /* ---- /Continent linechart --- */

@@ -45,11 +45,21 @@ function buildYearChart(nestData, continentData, continentColors) {
         .orient("bottom")
         .ticks(10, "g");
 
-    var yAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left")
-        .ticks(10, "%");
+    var buildYAxis = function() {
+        return d3.svg.axis()
+            .scale(y)
+            .orient("left")
+            .ticks(10, "%");
+    }
 
+
+    // Y grid lines
+    chart.append("g")
+        .attr("class", "y gridlines")
+        .call(buildYAxis()
+            .tickSize(-width, 0, 0)
+            .tickFormat("")
+        );
 
     // X axis.
     chart.append("g")
@@ -64,7 +74,7 @@ function buildYearChart(nestData, continentData, continentColors) {
     // Y axis.
     chart.append("g")
         .attr("class", "y axis")
-        .call(yAxis)
+        .call(buildYAxis())
       .append("text")
         .attr("class", "label")
         .attr("y", "-0.6rem")
