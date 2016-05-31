@@ -1,0 +1,3 @@
+[submodule "D3/D3TeamVisualization"]
+	path = D3/D3TeamVisualization
+	url = https://github.com/Wcubed/D3TeamVisualization
