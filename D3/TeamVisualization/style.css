@@ -1,0 +1,339 @@
+
+body {
+    background-color: rgb(33, 33, 33);
+    font-family: sans-serif;
+}
+
+main {
+    width: 90%;
+    position: relative;
+    display: block;
+    margin: 0 auto 0;
+}
+
+h1 {
+    color: white;
+    margin-top: 0rem;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: rgb(121,134,203);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color: rgb(121,134,203);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-container {
+    box-sizing: border-box;
+
+    float: none;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.textblock {
+    display: block;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.graph-container h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Common background and color parameters. */
+.commodity-selector,
+.details-display {
+    background-color: rgb(224,224,224);
+    color: rgb(174,213,129);
+    border: solid rgb(16, 18, 78) 1px;
+}
+
+/* ---- Filter container ---- */
+
+.filter-container {
+    float: left;
+    width: 20rem;
+    margin-right: 6rem;
+}
+
+/* -- Commodity selectors -- */
+
+.commodity-selector {
+    display: block;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    /*width: 5rem;
+    height: 5rem;*/
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+
+.commodity-selector.selected {
+    background-color: rgba(121,134,203, 0.83);
+}
+
+.commodity-selector.selected p {
+    color: white;
+}
+
+.commodity-selector p {
+    color: rgb(33,33,33);
+    margin: 0;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+/* -- /Commodity selectors -- */
+
+.year-slider {
+    width: 100%;
+    height: 4%;
+}
+
+/* ---- /Filter container ---- */
+
+/* ---- Details display ---- */
+
+.details-display {
+    min-width: 20rem;
+    float: left;
+    position: relative;
+
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.details-display h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.details-display p {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+    color: rgb(33, 33, 33);
+}
+
+/*.details-display p {
+    position: absolute;
+
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.details-display .details-import {
+    bottom: 0;
+    left: 0;
+}
+
+.details-display .details-export {
+    bottom: 0;
+    right: 0;
+}*/
+
+/* ---- /Details display ---- */
+
+.color-box {
+    float: left;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-right: 0.5rem;
+}
+
+.color-label {
+}
+
+
+.graph-container {
+    width: auto;
+    float: left;
+
+    margin-right: 3rem;
+}
+
+.slider-container {
+    width: 100%;
+}
+
+/* ---- Flowchart ---- */
+
+.flowchart {
+    float: left;
+}
+
+.flowchart .datapoint rect {
+    stroke: rgb(226, 226, 226);
+    shape-rendering: crispEdges;
+}
+
+.flowchart text {
+    fill: rgb(226, 226, 226);
+    text-anchor: middle;
+    alignment-baseline: middle;
+
+    pointer-events: none;
+}
+
+/* ---- /Flowchart ---- */
+
+/* ---- Streamchart ---- */
+
+.streamchart .background {
+    fill: rgba(97,97,97, 0.05);
+    border-radius: 15px;
+}
+
+.streamchart .bar {
+    shape-rendering: crispEdges;
+}
+
+.streamchart .label {
+    fill: white;
+}
+
+.streamchart .label-name {
+    alignment-baseline: middle;
+}
+
+.streamchart .label-percentage {
+    alignment-baseline: middle;
+    text-anchor: end;
+}
+
+.streamchart .label-separator {
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+
+.streamchart .year-line {
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+
+.streamchart path {
+    shape-rendering: geometricPrecision;
+}
+
+.streamchart .axis path,
+.streamchart .axis line {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    shape-rendering: crispEdges;
+}
+
+.streamchart text {
+    fill: white;
+}
+
+.streamchart .year-total-label {
+    text-anchor: middle;
+}
+
+/* ---- Streamchart ---- */
+
+.hidden {
+    display: none;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    padding: 15px;
+    font: 12px sans-serif;
+    background: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.scatterContainer {
+    display: block;
+    position: relative;
+    margin: 0 auto 0;
+    float: left;
+}
+
+.scatterplot {
+
+}
+
+.scatterplot .axis {
+    fill: none !important;
+}
+
+.scatterplot .axis line,
+.scatterplot .axis path {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    shape-rendering: crispEdges;
+}
+
+.scatterplot text {
+    fill: rgb(255, 255, 255);
+}
+
+/*Took from: http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html */
+/* Only compatible with webkit browser */
+
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+
+    /*required for proper track sizing in FF*/
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: rgb(121,134,203);
+    margin-top: -9px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
